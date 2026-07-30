@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean.RNAPolymeraseHoloenzymeAssembly
+import MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean.PromoterRecognitionAndClosedComplex
+import MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean.TranscriptionInitiationAndElongation
+import MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean.RegulatoryElementInteraction
+import MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean.CorePromoterElements
+
+namespace HautevilleHouse
+namespace MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean
+
+def TranscriptionInitiationLemmaClosed (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem transcription_initiation_lemma_endgame (A : AdmissibleClass) :
+    TranscriptionInitiationLemmaClosed A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MolecularBiologyPromotersTranscriptionInitiationLemmaCanonicalLaneLean
+end HautevilleHouse
